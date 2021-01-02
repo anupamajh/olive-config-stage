@@ -1,0 +1,6 @@
+server:
+  port: 7073
+
+logging:
+  file:
+    name: ./logs/olive-util-server.log
