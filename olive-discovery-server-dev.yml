@@ -1,0 +1,13 @@
+server:
+  port: 7074
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    
+logging:
+  file:
+    name: ./logs/olive-discovery-server.log
