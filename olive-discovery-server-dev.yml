@@ -1,10 +1,16 @@
 server:
   port: 7074
   
+spring:
+  application:
+    name: olive-discovery-server
+    
 eureka:
   instance:
     hostname: localhost
   client:
+    serviceUrl:
+      http://localhost:7074/eureka/
     register-with-eureka: false
     fetch-registry: false
     
