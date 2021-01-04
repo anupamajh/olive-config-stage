@@ -1,7 +1,17 @@
 server:
   port: 7072
 
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:7074/eureka/
+
 spring:
+  application:
+    name: olive-foundation-server
+    
   datasource:
     url: jdbc:mysql://localhost:3306/oliveFoundation?createDatabaseIfNotExist=true
     username: root
