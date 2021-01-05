@@ -34,8 +34,8 @@ security:
     resource:
       token-info-uri: localhost:7071/oauth/check_token
     client:
-      client_id: olive@carmelsolutions
-      client_secret: $2y$12$Hgfp8LOiIIoCmXl3j.FD6OcIPW3kk7dHG10.0LHhV8mrbSa1wn9OW
+      client-id: olive@carmelsolutions
+      client-secret: $2y$12$Hgfp8LOiIIoCmXl3j.FD6OcIPW3kk7dHG10.0LHhV8mrbSa1wn9OW
       
 logging:
   file:
