@@ -28,7 +28,12 @@ spring:
     generate-ddl: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5Dialect
-
+    
+security:
+  oauth2:
+    resource:
+      token-info-uri: localhost:7071/oauth/check_token
+      
 logging:
   file:
     name: ./logs/olive-foundation-server.log
