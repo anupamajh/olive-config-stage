@@ -1,12 +1,12 @@
 server:
   port: 7071
 
-#eureka:
-#  client:
-#    region: default
-#    registry-fetch-interval-seconds: 5
-#    service-url:
-#      defaultZone: http://localhost:7074/eureka/
+eureka:
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:7074/eureka/
 
 spring:
   application:
