@@ -11,7 +11,13 @@ server:
 spring:
   application:
     name: olive-foundation-server
-    
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:7071/.well-known/jwks.json"
+          
   datasource:
     url: jdbc:mysql://localhost:3306/oliveFoundation?createDatabaseIfNotExist=true
     username: root
