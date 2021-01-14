@@ -28,14 +28,6 @@ spring:
     generate-ddl: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5Dialect
-
-# TODO: This config can be moved to application-dev.yml
-security:
-  oauth2:
-    resource:
-      jwt:
-        key-value: ---- BEGIN SSH2 PUBLIC KEY ----AAAAB3NzaC1yc2EAAAADAQABAAABAQDBf1jZNlhSttQv8NsUxn6iRgpRvMhQ9qZZ6cb/GzwDZTNuh9XGW6YOwoOtMJYFhOzh8midW/qs9I00o+SF0ZnyZaqC+mNhEW4++HpCM2Y30Jv64b/kGPYuXQpsHA7Iu4TsIOZA6TalHStd8VwiHmm0GZZnMYUGJFUAAIzBoC2nzQiMUWxEa8Brh8fbQ1v5Ox5Zh36tTbCm8Y0vSttA2XcfnZsXT8MsvFD79rtyUrSik1AxsprU77MUARWYrcGVuNRYwHqW5xriTvZZiMRwFzrgIoCYuCpCB0p/SIxrnw+MfHMZ4xgZGX4XVIHHd/LraRVArwwmWOnJHpxzGlQ9TWW5---- END SSH2 PUBLIC KEY ----
-
       
 logging:
   file:
