@@ -5,12 +5,12 @@ spring:
   application:
     name: olive-util-server
     
-eureka:
-  client:
-    region: default
-    registry-fetch-interval-seconds: 5
-    service-url:
-      defaultZone: http://localhost:7074/eureka/
+#eureka:
+#  client:
+#    region: default
+#    registry-fetch-interval-seconds: 5
+#    service-url:
+#      defaultZone: http://localhost:7074/eureka/
       
 logging:
   file:
