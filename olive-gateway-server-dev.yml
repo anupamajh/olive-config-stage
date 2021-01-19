@@ -1,0 +1,23 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: olive-gateway-server
+
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          jwk-set-uri: "http://localhost:7071/.well-known/jwks.json"
+          
+#eureka:
+#  client:
+#    region: default
+#    registry-fetch-interval-seconds: 5
+#    service-url:
+#      defaultZone: http://localhost:7074/eureka/
+      
+logging:
+  file:
+    name: ./logs/olive-gateway-server.log
