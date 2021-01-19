@@ -4,7 +4,13 @@ server:
 spring:
   application:
     name: olive-gateway-server
-
+  cloud:
+    gateway:
+      routes:
+        - id: foundation
+          uri: 'http://localhost:7072'
+          predicates:
+            - Path=/api/org/**
 #  security:
 #    oauth2:
 #      resourceserver:
@@ -21,3 +27,5 @@ spring:
 logging:
   file:
     name: ./logs/olive-gateway-server.log
+    
+
