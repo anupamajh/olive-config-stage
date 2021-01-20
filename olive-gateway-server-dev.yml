@@ -15,7 +15,7 @@ spring:
 #          uri: 'http://localhost:7072'
           uri: lb://olive-foundation-server
           predicates:
-            - Path=/api/org/**
+            - Path=/api/org/{segment}
             - Method=GET
             - Header=Authorization, Bearer (.*)
           filters:
