@@ -8,7 +8,8 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true    
+          enabled: true
+          lower-case-service-id: true
 #      routes:
 #        - id: foundation
 #          uri: 'http://localhost:7072'
