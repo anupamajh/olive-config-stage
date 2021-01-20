@@ -18,7 +18,7 @@ spring:
             - Method=POST
           filters:
             - RemoveRequestHeader=Cookie
-            - RewritePath=/api/v1.0/(?<segment>/?.*), /oauthron/token/$\{segment}
+            - RewritePath=/api/v1.0/(?<segment>/?.*), /oauth/token/$\{segment}
             
         - id: foundation-get-org
 #          uri: 'http://localhost:7072'
