@@ -15,13 +15,13 @@ spring:
 #          uri: 'http://localhost:7072'
           uri: lb://olive-foundation-server
           predicates:
-            - Path=/api/org/{segment}
+            - Path=/api/org/**
             - Method=GET
             - Query=id
             - Header=Authorization, Bearer (.*)
           filters:
             - RemoveRequestHeader=Cookie
-            - RewritePath=/api/org/(?<segment>.*), /$\{segment}
+            - RewritePath=/api(?<segment>/?.*), $\{segment}
 
 
 #  security:
