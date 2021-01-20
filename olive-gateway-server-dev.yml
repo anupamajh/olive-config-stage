@@ -19,7 +19,7 @@ spring:
             - Method=GET
           filters:
             - RemoveRequestHeader=Cookie
-            - RewritePath=/api/org/(?.*), /$\{remains}
+            - RewritePath=/api/org/(?<segment>.*), /$\{segment}
 
 
 #  security:
