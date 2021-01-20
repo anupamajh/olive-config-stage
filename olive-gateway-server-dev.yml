@@ -6,15 +6,19 @@ spring:
     name: olive-gateway-server    
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
-#      routes:
-#        - id: foundation
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+      routes:
+        - id: foundation-get-org
 #          uri: 'http://localhost:7072'
-#          predicates:
-#            - Path=/api/org/**
+          uri: lb://olive-foundation-server
+          predicates:
+            - Path=/org/get
+            - Method=GET
+          filters
+            - RemoveRequestHeader=Cookie
 
 
 #  security:
