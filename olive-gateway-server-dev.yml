@@ -3,9 +3,12 @@ server:
 
 spring:
   application:
-    name: olive-gateway-server
-#  cloud:
-#    gateway:
+    name: olive-gateway-server    
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true    
 #      routes:
 #        - id: foundation
 #          uri: 'http://localhost:7072'
