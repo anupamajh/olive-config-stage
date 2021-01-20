@@ -11,6 +11,15 @@ spring:
 #          enabled: true
 #          lower-case-service-id: true
       routes:
+        - id: login
+          uri: lb://olive-auth-server
+          predicates:
+            - Path=/api/v1.0/login
+            - Method=POST
+          filters:
+            - RemoveRequestHeader=Cookie
+            - RewritePath=/api/v1.0/(?<segment>/?.*), /oauth/token/$\{segment}
+            
         - id: foundation-get-org
 #          uri: 'http://localhost:7072'
           uri: lb://olive-foundation-server
