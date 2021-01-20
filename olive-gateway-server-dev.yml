@@ -17,6 +17,7 @@ spring:
           predicates:
             - Path=/api/org/**
             - Method=GET
+            - Header=Authorization, Bearer (*.)
           filters:
             - RemoveRequestHeader=Cookie
             - RewritePath=/api/org/(?<segment>.*), /$\{segment}
