@@ -17,7 +17,7 @@ spring:
             - Path=/api/v1.0/login
             - Method=POST
           filters:
-            - RemoveRequestHeader=Cookie
+#            - RemoveRequestHeader=Cookie
             - RewritePath=/api/v1.0/(?<segment>/?.*), /oauth/token/$\{segment}
             
         - id: foundation-get-org
