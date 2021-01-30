@@ -31,5 +31,11 @@ spring:
 
 
 logging:
+  level:
+    org:
+      springframework:
+        security:
+          oauth: trace
+
   file:
     name: ./logs/olive-auth-server.log
