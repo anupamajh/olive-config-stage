@@ -3,7 +3,7 @@ server:
 
 olive-client:
   client-id: olive@carmelsolutions
-  client-secret: P@assw0rd
+  client-secret: P@ssw0rd
 
 eureka:
   client:
