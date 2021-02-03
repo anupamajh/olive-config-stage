@@ -5,7 +5,7 @@ olive-client:
   client-id: olive@carmelsolutions
   client-secret: P@ssw0rd
   grant-type: password
-  request-end-point: /api/v1/authenticate
+  auth-end-point: /api/v1/authenticate
 
 eureka:
   client:
