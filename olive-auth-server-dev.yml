@@ -1,6 +1,10 @@
 server:
   port: 7071
 
+olive-client:
+  client-id: olive@carmelsolutions
+  client-secret: P@assw0rd
+
 eureka:
   client:
     region: default
