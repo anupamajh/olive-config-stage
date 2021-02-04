@@ -4,7 +4,7 @@ server:
 olive-client:
   client-id: olive@carmelsolutions
   client-secret: P@ssw0rd
-  auth-end-point: /api/v1/authenticate
+  auth-end-point: /api/v1/olive-login
 
 eureka:
   client:
