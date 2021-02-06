@@ -1,3 +1,7 @@
+# Move this to user profile. Fetch the locale from user preference rather than this config
+olive-locale:
+  user-timezone: Asia/Calcutta
+  
 spring:
   security:
     user:
