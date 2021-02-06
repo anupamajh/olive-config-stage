@@ -25,15 +25,19 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     initialization-mode: always
 
+
   jpa:
     hibernate:
+      properties:
+        jdbc:
+          time_zone: UTC
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update
     show-sql: true
     generate-ddl: true
     database: mysql
-    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect    
       
 logging:
   file:
