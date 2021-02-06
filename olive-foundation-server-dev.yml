@@ -1,6 +1,6 @@
 # Move this to its own mvn package when it is ready
 short-date:
-  invalid: Invalid date - "${validatedValue}"
+  invalid: Invalid date
 
 server:
   port: 7072
