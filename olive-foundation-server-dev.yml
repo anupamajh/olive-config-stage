@@ -28,9 +28,6 @@ spring:
 
   jpa:
     hibernate:
-      properties:
-        jdbc:
-          time_zone: UTC
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update
