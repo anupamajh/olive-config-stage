@@ -17,9 +17,10 @@ spring:
       resourceserver:
         jwt:
           jwk-set-uri: "http://localhost:7071/.well-known/jwks.json"
-          
+
+# &serverTimezone=UTC
   datasource:
-    url: jdbc:mysql://localhost:3306/oliveFoundation?createDatabaseIfNotExist=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    url: jdbc:mysql://localhost:3306/oliveFoundation?createDatabaseIfNotExist=true&useLegacyDatetimeCode=false
     username: root
     password: P@ssw0rd
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -28,9 +29,9 @@ spring:
 
   jpa:
     hibernate:
-      properties:
-        jdbc:
-          time_zone: UTC        
+#      properties:
+#        jdbc:
+#          time_zone: UTC        
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update
