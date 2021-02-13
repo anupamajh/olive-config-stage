@@ -14,7 +14,15 @@ logging:
     org:
       hibernate:
         type: info
+          descriptor:
+            sql:
+              BasicBinder: TRACE
         SQL: debug
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate:DEBUG
+            StatementCreatorUtils:TRACE      
     com:
       carmel:
         olive: trace
