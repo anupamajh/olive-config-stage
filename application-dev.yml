@@ -8,9 +8,9 @@ spring:
       name: root
       password: P@ssw0rd
 
-#logging:
-#  level:
-#    root: info
+logging:
+  level:
+    root: info
 #    org:
 #      hibernate:
 #        type: info
