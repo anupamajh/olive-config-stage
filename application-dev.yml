@@ -11,18 +11,18 @@ spring:
 logging:
   level:
     root: info
-#    org:
-#      hibernate:
-#        type: info
-#        SQL: debug
-#    com:
-#      carmel:
-#        olive: trace
+    org:
+      hibernate:
+        type: info
+        SQL: debug
+    com:
+      carmel:
+        olive: trace
 
-#  pattern:
-#    console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
+  pattern:
+    console: '%d{"yyyy/MM/dd HH:mm:ss,SSS"} [%p] [%t] %M\(%F:%L\) - %msg%n'
 
-#  logback:
-#    rollingpolicy:
-#      clean-history-on-start: false
-#      max-file-size: 5MB
+  logback:
+    rollingpolicy:
+      clean-history-on-start: false
+      max-file-size: 5MB
