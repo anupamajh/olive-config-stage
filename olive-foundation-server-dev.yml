@@ -40,6 +40,6 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5Dialect    
       
-logging:
-  file:
-    name: ./logs/olive-foundation-server.log
+#logging:
+#  file:
+#    name: ./logs/olive-foundation-server.log
