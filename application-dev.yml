@@ -11,10 +11,10 @@ spring:
 logging:
   level:
     root: info
-    org:
-      hibernate:
-        type: info
-        SQL: debug
+#    org:
+#      hibernate:
+#        type: info
+#        SQL: debug
     com:
       carmel:
         olive: trace
