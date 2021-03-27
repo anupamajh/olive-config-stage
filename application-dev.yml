@@ -1,7 +1,9 @@
 # Move this to user profile. Fetch the locale from user preference rather than this config
 olive-locale:
   user-timezone: Asia/Calcutta
-  
+
+2-factor-otp-api-key: b3d3355a-199a-11eb-b380-0200cd936042
+
 spring:
   security:
     user:
