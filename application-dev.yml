@@ -2,7 +2,7 @@
 olive-locale:
   user-timezone: Asia/Calcutta
 
-tfactor-otp-api-key: b3d3355a-199a-11eb-b380-0200cd936042
+t-factor-otp-api-key: b3d3355a-199a-11eb-b380-0200cd936042
 
 spring:
   security:
