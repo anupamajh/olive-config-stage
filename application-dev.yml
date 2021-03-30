@@ -2,7 +2,11 @@
 olive-locale:
   user-timezone: Asia/Calcutta
 
-t-factor-otp-api-key: b3d3355a-199a-11eb-b380-0200cd936042
+#t-factor-otp-api-key: b3d3355a-199a-11eb-b380-0200cd936042
+two-factor:
+  api-key: b3d3355a-199a-11eb-b380-0200cd936042,
+  sandbox-sessionId: bef6dde9-3d15-499e-ab09-293ff9367893,
+  sandbox-otp: 12345
 
 spring:
   security:
